@@ -1,4 +1,4 @@
-import * as home from "../controllers/mod.ts";
+import * as home from "../controllers/home_controller.ts";
 
 export const routes = 
 [
