@@ -1,31 +1,51 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+html, body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #181818;
 }
 
 h1 {
-    font-size: 42px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    margin-bottom: 10vh;
+    display: block;
+    font-size: 8vmin;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Sigmar One', cursive;
+}
+
+h1 > span {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 img {
-    width: 30vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+    width: 55vmin;
 }
 
 p {
-    position: absolute;
-    text-align: center;
     opacity: 0.7;
-    bottom: 1.2vh;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+}
+
+@media (max-width: 500px) {
+    h1 {
+        width: min-content;
+        font-size: 10vmin;
+        line-height: 9vmin;
+    }
+
+    h1 > span:first-child {
+        font-family: 'Itim', cursive;
+        font-size: 0.8em;
+
+        transform-origin: bottom left;
+        transform: translateX(-3.5vw) rotateZ(-12.5deg);
+    }
+
+    p {
+        margin-top: 15vh;
+    }
 }
