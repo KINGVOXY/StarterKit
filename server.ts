@@ -1,4 +1,4 @@
-import { System, Config } from "https://raw.githubusercontent.com/PuddleServer/Puddle/develop/mod.ts";
+import { System, Config } from "https://github.com/PuddleServer/Puddle/raw/v1.0.0-beta/mod.ts";
 import { routes } from "./config/routes.ts";
 
 // ルーティング
