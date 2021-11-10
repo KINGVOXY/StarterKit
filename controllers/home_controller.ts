@@ -10,5 +10,5 @@ import {
  * @param res レスポンス(SystemResponse)
  */
 export async function get_welcome(req: SystemRequest, res: SystemResponse): Promise<void> {
-    res.setFile("./views/home/welcome.html");
+    await res.setFile("./views/home/welcome.html");
 }
