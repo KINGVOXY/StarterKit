@@ -1,7 +1,7 @@
 import {
     SystemRequest,
     SystemResponse
-} from "https://github.com/PuddleServer/Puddle/raw/v1.1.0-beta/mod.ts";
+} from "../deps.ts";
 
 /**
  * Welcomeページの表示 (get a welcome page.)
