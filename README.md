@@ -14,6 +14,9 @@
 │   └── home_controller.ts
 ├── deps.ts
 ├── server.ts
+├── docker
+│   └── deno
+│       └── Dockerfile
 └── views
     ├── assets
     │   ├── images
@@ -44,5 +47,12 @@
 ## 起動方法 (how to run)
 
 ```bash
-deno run --allow-net --allow-read --allow-write server.ts
+# build
+docker-compose build
+# run
+docker-compose up
+# run(daemon)
+docker-compose up -d
+# down
+docker-compose down
 ```
