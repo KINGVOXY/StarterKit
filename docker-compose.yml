@@ -1,0 +1,10 @@
+version: '3'
+services:
+  deno:
+    build: ./docker/deno
+    container_name: deno
+    command: bash -c "deno run --allow-net --allow-read --allow-write server.ts"
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
