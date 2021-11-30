@@ -1,6 +1,6 @@
 # Puddle Starter Kit
 
-- deno 1.14.0
+- deno 1.16.1
 - typescript 4.4.2
 
 ## 構成(tree)
@@ -8,9 +8,11 @@
 .
 ├── README.md
 ├── config
+│   ├── .env
 │   └── routes.ts
 ├── controllers
 │   └── home_controller.ts
+├── deps.ts
 ├── server.ts
 └── views
     ├── assets
